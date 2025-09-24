@@ -1,0 +1,37 @@
+# Ashutosh Tiwari - FullStack Developer Portfolio
+# https://elitedev-v2.vercel.app
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env*
+Disallow: /node_modules/
+
+# Allow specific crawlers
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+
+# LinkedIn crawler for professional content
+User-agent: LinkedInBot
+Allow: /
+Disallow: /api/
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://elitedev-v2.vercel.app/sitemap.xml

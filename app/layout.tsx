@@ -1,31 +1,31 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
-import { ThemeProvider } from "@/components/ui/theme-provider"
-import { Toaster } from "@/components/ui/sonner"
-import { Suspense } from "react"
-import { SUSE } from "next/font/google"
+import type React from "react";
+import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
+import { ThemeProvider } from "@/components/ui/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
+import { Suspense } from "react";
+import { SUSE } from "next/font/google";
 
 const suse = SUSE({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-suse",
-})
+});
 
-const siteUrl = "https://elitedev-v2.vercel.app"
+const siteUrl =  process.env.NEXT_PUBLIC_SITE_URL || "https://elitedev-v2.vercel.app";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl), 
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Ashutosh Tiwari - Frontend Developer Portfolio",
-    template: "%s | Ashutosh Tiwari - Frontend Developer"
+    default: "Ashutosh Tiwari - FullStack Developer Portfolio",
+    template: "%s | Ashutosh Tiwari - FullStack Developer",
   },
   description:
-    "Frontend Developer specializing in React.js, Next.js, TypeScript, and modern web technologies. Experienced in building scalable web applications with Node.js, Express.js, and cloud platforms like AWS. Portfolio showcasing projects in AI-powered applications, manga platforms, and full-stack development.",
+    "I am a FullStack Developer specializing in Next.js, cloud like AWS, and modern web technologies. Portfolio showcasing projects in AI-powered applications.",
   keywords: [
     "Ashutosh Tiwari",
-    "Frontend Developer",
+    "FullStack Developer",
     "React Developer",
     "Next.js Developer",
     "TypeScript Developer",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     "Software Engineer",
     "Web Developer India",
     "React Portfolio",
-    "Developer Portfolio"
+    "Developer Portfolio",
   ],
   authors: [{ name: "Ashutosh Tiwari", url: siteUrl }],
   creator: "Ashutosh Tiwari",
@@ -98,26 +98,26 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.webp", sizes: "16x16", type: "image/png" },
-      { url: "/favicon.webp", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.webp", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "96x96", type: "image/png" },
     ],
     apple: [
-      { url: "/favicon.webp", sizes: "57x57", type: "image/png" },
-      { url: "/favicon.webp", sizes: "60x60", type: "image/png" },
-      { url: "/favicon.webp", sizes: "72x72", type: "image/png" },
-      { url: "/favicon.webp", sizes: "76x76", type: "image/png" },
-      { url: "/favicon.webp", sizes: "114x114", type: "image/png" },
-      { url: "/favicon.webp", sizes: "120x120", type: "image/png" },
-      { url: "/favicon.webp", sizes: "144x144", type: "image/png" },
-      { url: "/favicon.webp", sizes: "152x152", type: "image/png" },
-      { url: "/favicon.webp", sizes: "180x180", type: "image/png" },
+      { url: "/favicon.png", sizes: "57x57", type: "image/png" },
+      { url: "/favicon.png", sizes: "60x60", type: "image/png" },
+      { url: "/favicon.png", sizes: "72x72", type: "image/png" },
+      { url: "/favicon.png", sizes: "76x76", type: "image/png" },
+      { url: "/favicon.png", sizes: "114x114", type: "image/png" },
+      { url: "/favicon.png", sizes: "120x120", type: "image/png" },
+      { url: "/favicon.png", sizes: "144x144", type: "image/png" },
+      { url: "/favicon.png", sizes: "152x152", type: "image/png" },
+      { url: "/favicon.png", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: "/favicon.webp",
+    shortcut: "/favicon.png",
     other: [
       {
         rel: "mask-icon",
-        url: "/favicon.webp",
+        url: "/favicon.png",
         color: "#000000",
       },
     ],
@@ -127,16 +127,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Ashutosh Tiwari - Frontend Developer Portfolio",
+    title: "Ashutosh Tiwari - FullStack Developer Portfolio",
     description:
-      "Experienced Frontend Developer specializing in React.js, Next.js, TypeScript, and modern web technologies. Showcasing innovative projects including AI-powered applications, manga platforms, and full-stack solutions with expertise in AWS, Docker, and cloud deployment.",
+      "Experienced FullStack Developer specializing in React.js, Next.js, TypeScript, and modern web technologies. Showcasing innovative projects including AI-powered applications, manga platforms, and full-stack solutions with expertise in AWS, Docker, and cloud deployment.",
     siteName: "Ashutosh Tiwari Portfolio",
     images: [
       {
         url: "/portfolio-preview.png",
         width: 1200,
         height: 630,
-        alt: "Ashutosh Tiwari - Frontend Developer Portfolio showcasing React, Next.js, and TypeScript projects",
+        alt: "Ashutosh Tiwari - FullStack Developer Portfolio showcasing React, Next.js, and TypeScript projects",
         type: "image/png",
       },
       {
@@ -150,15 +150,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ashutosh Tiwari - Frontend Developer Portfolio",
+    title: "Ashutosh Tiwari - FullStack Developer Portfolio",
     description:
-      "Frontend Developer specializing in React.js, Next.js, TypeScript. Building innovative web applications with modern technologies and cloud platforms.",
+      "FullStack Developer specializing in React.js, Next.js, TypeScript. Building innovative web applications with modern technologies and cloud platforms.",
     site: "@ashutosh-tiwari",
     creator: "@ashutosh-tiwari",
     images: [
       {
         url: "/portfolio-preview.png",
-        alt: "Ashutosh Tiwari - Frontend Developer Portfolio",
+        alt: "Ashutosh Tiwari - FullStack Developer Portfolio",
       },
     ],
   },
@@ -207,26 +207,27 @@ export const metadata: Metadata = {
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Ashutosh Tiwari",
-  "jobTitle": "Frontend Developer",
-  "description": "Experienced Frontend Developer specializing in React.js, Next.js, TypeScript, and modern web technologies. Skilled in building scalable web applications with Node.js, Express.js, and cloud platforms.",
-  "url": siteUrl,
-  "email": "ashutosh0tiwari@gmail.com",
-  "telephone": "+91 8377056538",
-  "address": {
+  name: "Ashutosh Tiwari",
+  jobTitle: "FullStack Developer",
+  description:
+    "Experienced FullStack Developer specializing in React.js, Next.js, TypeScript, and modern web technologies. Skilled in building scalable web applications with Node.js, Express.js, and cloud platforms.",
+  url: siteUrl,
+  email: "ashutosh0tiwari@gmail.com",
+  telephone: "+91 8377056538",
+  address: {
     "@type": "PostalAddress",
-    "addressLocality": "New Delhi",
-    "addressCountry": "India"
+    addressLocality: "New Delhi",
+    addressCountry: "India",
   },
-  "sameAs": [
+  sameAs: [
     "https://linkedin.com/in/ashutosh-tiwari",
     "https://github.com/AshutoshDM1",
     "https://x.com/ashutosh-tiwari",
-    "https://elitedev.tech"
+    "https://elitedev.tech",
   ],
-  "knowsAbout": [
+  knowsAbout: [
     "React.js",
-    "Next.js", 
+    "Next.js",
     "TypeScript",
     "JavaScript",
     "Node.js",
@@ -250,38 +251,39 @@ const structuredData = {
     "Socket.io",
     "GenAI",
     "GeminiAI",
-    "Frontend Development",
+    "FullStack Development",
     "Full Stack Development",
     "Web Development",
-    "Software Engineering"
+    "Software Engineering",
   ],
-  "hasCredential": [
+  hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
-      "name": "Frontend Developer",
-      "description": "Experienced in building modern web applications with React.js, Next.js, and TypeScript"
-    }
+      name: "FullStack Developer",
+      description:
+        "Experienced in building modern web applications with React.js, Next.js, and TypeScript",
+    },
   ],
-  "worksFor": {
+  worksFor: {
     "@type": "Organization",
-    "name": "Freelance",
-    "description": "Frontend Development Services"
+    name: "Freelance",
+    description: "FullStack Development Services",
   },
-  "alumniOf": {
+  alumniOf: {
     "@type": "Organization",
-    "name": "Educational Institution"
+    name: "Educational Institution",
   },
-  "image": `${siteUrl}/ashutosh-tiwari.jpg`,
-  "mainEntityOfPage": {
+  image: `${siteUrl}/ashutosh-tiwari.jpg`,
+  mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": siteUrl
-  }
+    "@id": siteUrl,
+  },
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -291,16 +293,31 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
+        <meta
+          name="format-detection"
+          content="telephone=no, date=no, email=no, address=no"
+        />
       </head>
-      <body className={`${suse.variable} font-suse`}>
+      <body className={`${suse.variable} font-suse scroll-smooth`}>
         <Suspense fallback={null}>
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
             {children}
             <Toaster />
             <Analytics />
@@ -308,5 +325,5 @@ export default function RootLayout({
         </Suspense>
       </body>
     </html>
-  )
+  );
 }

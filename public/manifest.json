@@ -1,0 +1,62 @@
+{
+  "name": "Ashutosh Tiwari - FullStack Developer Portfolio",
+  "short_name": "Ashutosh Tiwari",
+  "description": "FullStack Developer specializing in React.js, Next.js, TypeScript, and modern web technologies. Portfolio showcasing innovative projects in AI-powered applications and full-stack development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png", 
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/portfolio-preview.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Ashutosh Tiwari Portfolio - FullStack Developer Projects Showcase"
+    }
+  ],
+  "features": [
+    "React.js Development",
+    "Next.js Applications",
+    "TypeScript Projects",
+    "AI-Powered Applications",
+    "Full-Stack Solutions",
+    "Modern Web Technologies",
+    "Cloud Deployment",
+    "Responsive Design"
+  ]
+}
