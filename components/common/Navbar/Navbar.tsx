@@ -15,17 +15,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="pt-2 sticky top-0 z-50">
+    <div className="pt-2 sticky top-0 z-50 bg-white dark:bg-[#0C0A09]">
       <nav
-        className={`border-y border-edge transition-shadow duration-300 ${
+        className={`border-y px-2 border-edge transition-shadow duration-300 ${
           scrolled ? "shadow-[0_0_16px_0_black]/8" : ""
         }`}
       >
         <div className="flex items-center justify-end gap-4 border-x border-edge max-w-5xl mx-auto py-3 px-2">
           {["Elitefolio", "Blogs", "Components"].map((item) => (
-            <h1 
-            key={item}
-            className="text-base font-normal text-primary cursor-pointer">
+            <h1
+              key={item}
+              className="text-base font-normal text-primary cursor-pointer"
+            >
               {item}
             </h1>
           ))}
