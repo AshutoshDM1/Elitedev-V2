@@ -7,7 +7,7 @@ const HeroImage = () => {
       <div className="z-10">
         <Image
           className="filter invert dark:filter-none"
-          src="/favicon.png"
+          src="/favicon.webp"
           alt="Home"
           width={200}
           height={200}

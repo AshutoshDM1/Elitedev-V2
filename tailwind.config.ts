@@ -2,8 +2,11 @@
 export default {
     theme: {
       extend: {
+        backgroundColor: {
+          dark: 'var(--color-dark)',
+        },
         borderColor: {
-          edge: 'hsl(var(--border-muted) / 0.5)', // maps to border-muted/50
+          edge: 'var(--color-edge)',
         },
       },
     },

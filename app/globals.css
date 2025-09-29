@@ -3,6 +3,25 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-dark : "#0C0A09";
+  --pattern-foreground: color-mix(
+    in oklab,
+    color-mix(
+        in oklab,
+        lab(15.7305% 0.613764 -2.16959) 64%,
+        lab(2.51107% 0.242703 -0.886115)
+      )
+      56%,
+    transparent
+  );
+  --color-edge: color-mix(
+    in oklab,
+    lab(15.7305% 0.613764 -2.16959) 64%,
+    lab(2.51107% 0.242703 -0.886115)
+  );
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -121,7 +140,6 @@
     @apply bg-background text-foreground;
   }
 }
-
 
 ::-webkit-scrollbar {
   width: 8px;

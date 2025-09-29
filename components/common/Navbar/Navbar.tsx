@@ -15,7 +15,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="pt-2 sticky top-0 z-50 bg-white dark:bg-[#0C0A09]">
+    <div className="pt-2 sticky top-0 z-50 bg-white dark:bg-dark ">
       <nav
         className={`border-y px-2 border-edge transition-shadow duration-300 ${
           scrolled ? "shadow-[0_0_16px_0_black]/8" : ""
