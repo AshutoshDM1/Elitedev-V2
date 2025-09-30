@@ -13,13 +13,15 @@ const ProfileImage = () => {
           height={200}
         />
       </div>
-      <div className="max-h-full w-full flex flex-col relative">
-        <div className="absolute inset-0 z-0 bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] [--pattern-foreground:var(--color-edge)]/56" />
-        <h2 className="w-full flex justify-start items-center gap-4 text-2xl font-semibold tracking-wide border-y border-edge p-2 z-10">
+      <div className="max-h-full w-full flex flex-col">
+        <div className="h-full w-full relative">
+          <div className="absolute inset-0 z-0 bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] [--pattern-foreground:var(--color-edge)]/56" />
+        </div>
+        <h2 className="w-full flex justify-start items-center gap-4 text-2xl font-semibold border-t border-edge tracking-wide p-2 z-10">
           Ashutosh Tiwari
           <span>{Svg.twitterSVG}</span>
         </h2>
-        <p className="flex justify-start text-sm font-light text-foreground/60 border-y border-edge p-2 z-10">
+        <p className="flex justify-start text-sm font-light text-foreground/60 border-t border-edge p-2 z-10">
           One Source Contributor
         </p>
       </div>

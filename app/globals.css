@@ -4,22 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-dark : "#0C0A09";
-  --pattern-foreground: color-mix(
-    in oklab,
-    color-mix(
-        in oklab,
-        lab(15.7305% 0.613764 -2.16959) 64%,
-        lab(2.51107% 0.242703 -0.886115)
-      )
-      56%,
-    transparent
-  );
-  --color-edge: color-mix(
-    in oklab,
-    lab(15.7305% 0.613764 -2.16959) 64%,
-    lab(2.51107% 0.242703 -0.886115)
-  );
+  --color-dark : "#09090B";
 }
 
 @theme inline {
@@ -95,6 +80,22 @@
   --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
   --sidebar-border: oklch(0.923 0.003 48.717);
   --sidebar-ring: oklch(0.709 0.01 56.259);
+  --color-dark: "hsl(204, 2.8%, 9.6%)";
+  --pattern-foreground: color-mix(
+    in oklab,
+    color-mix(
+        in oklab,
+        lab(90.6853% .399232 -1.45452) 64%,
+        lab(100% 0 0)
+      )
+      56%,
+    transparent
+  );
+  --color-edge: color-mix(
+    in oklab,
+    lab(90.6853% .399232 -1.45452) 64%,
+    lab(100% 0 0)
+  );
 }
 
 .dark {
@@ -129,6 +130,21 @@
   --sidebar-accent-foreground: oklch(0.985 0.001 106.423);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.553 0.013 58.071);
+  --pattern-foreground: color-mix(
+    in oklab,
+    color-mix(
+        in oklab,
+        lab(15.7305% 0.613764 -2.16959) 64%,
+        lab(2.51107% 0.242703 -0.886115)
+      )
+      56%,
+    transparent
+  );
+  --color-edge: color-mix(
+    in oklab,
+    lab(15.7305% .613764 -2.16959) 64%,
+    lab(2.51107% .242703 -.886115)
+  );
 }
 
 @layer base {

@@ -310,7 +310,7 @@ export default function RootLayout({
           content="telephone=no, date=no, email=no, address=no"
         />
       </head>
-      <body className={`${suse.variable} font-suse scroll-smooth`}>
+      <body className={`${suse.variable} font-suse scroll-smooth bg-white dark:bg-[#09090B]`}>
         <Suspense fallback={null}>
           <ThemeProvider
             attribute="class"
