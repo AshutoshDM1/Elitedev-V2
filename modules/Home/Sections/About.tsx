@@ -13,13 +13,13 @@ import {
 const About = () => {
   const personalInfo = [
     { text: "Ashutosh Tiwari", icon: <User className="h-full w-full" /> },
-    { text: "Senior Frontend Developer & UI Design Lead", icon: <Briefcase className="h-full w-full" /> },
-    { text: "@Simplamo", icon: <Building2 className="h-full w-full" /> },
-    { text: "Founder @Quaric", icon: <Crown className="h-full w-full" /> },
+    { text: "Full Stack Developer & Frontend/Design Engg. At EdgeNroot", icon: <Briefcase className="h-full w-full" /> },
+    { text: "@Codegen", icon: <Building2 className="h-full w-full" /> },
+    { text: "Founder @MangaHaven", icon: <Crown className="h-full w-full" /> },
     { text: "New Delhi, India", icon: <MapPin className="h-full w-full" /> },
-    { text: "+84 777 888 148", icon: <Phone className="h-full w-full" /> },
-    { text: "dai@chanhdai.com", icon: <Mail className="h-full w-full" /> },
-    { text: "chanhdai.com", icon: <Globe className="h-full w-full" /> },
+    { text: "+91 8377056538", icon: <Phone className="h-full w-full" /> },
+    { text: "ashutosh0tiwari.com", icon: <Mail className="h-full w-full" /> },
+    { text: "elitedev.tech", icon: <Globe className="h-full w-full" /> },
     { text: "he/him", icon: <Github className="h-full w-full" /> },
   ];
 

@@ -3,6 +3,7 @@ import Section from "@/components/common/Section/Section";
 import HeroImage from "./Sections/HeroImage";
 import ProfileImage from "./Sections/ProfileImage";
 import About from "./Sections/About";
+import LineBar from "@/components/common/LineBar/LineBar";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
           <About />
         </Section>
       </BottomLine>
+      <LineBar />
     </div>
   );
 };
