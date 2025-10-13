@@ -4,10 +4,11 @@ import HeroImage from "./Sections/HeroImage";
 import ProfileImage from "./Sections/ProfileImage";
 import About from "./Sections/About";
 import LineBar from "@/components/common/LineBar/LineBar";
+import SocialLinks from "./Sections/SocialLinks";
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-[200vh]">
       <BottomLine>
         <Section>
           <HeroImage />
@@ -23,7 +24,8 @@ const Home = () => {
           <About />
         </Section>
       </BottomLine>
-      <LineBar />
+
+      <SocialLinks />
     </div>
   );
 };
