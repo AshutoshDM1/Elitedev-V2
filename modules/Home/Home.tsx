@@ -3,8 +3,8 @@ import Section from "@/components/common/Section/Section";
 import HeroImage from "./Sections/HeroImage";
 import ProfileImage from "./Sections/ProfileImage";
 import About from "./Sections/About";
-import LineBar from "@/components/common/LineBar/LineBar";
 import SocialLinks from "./Sections/SocialLinks";
+import MoreAbout, { AboutContent } from "./Sections/MoreAbout";
 
 const Home = () => {
   return (
@@ -14,11 +14,13 @@ const Home = () => {
           <HeroImage />
         </Section>
       </BottomLine>
+
       <BottomLine>
         <Section>
           <ProfileImage />
         </Section>
       </BottomLine>
+
       <BottomLine>
         <Section>
           <About />
@@ -26,6 +28,18 @@ const Home = () => {
       </BottomLine>
 
       <SocialLinks />
+
+      <BottomLine>
+        <Section>
+          <MoreAbout />
+        </Section>
+      </BottomLine>
+
+      <BottomLine>
+        <Section>
+          <AboutContent />
+        </Section>
+      </BottomLine>
     </div>
   );
 };
