@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://aws-cron.vercel.app'
+  const baseUrl = 'https://elitedev-v2.vercel.app'
   
   // Define your static pages
   const staticPages = [

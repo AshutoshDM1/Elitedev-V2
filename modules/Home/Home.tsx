@@ -4,11 +4,13 @@ import HeroImage from "./Sections/HeroImage";
 import ProfileImage from "./Sections/ProfileImage";
 import About from "./Sections/About";
 import SocialLinks from "./Sections/SocialLinks";
-import MoreAbout, { AboutContent } from "./Sections/MoreAbout";
+import TechStack, { TeactStacKHeading } from "./Sections/TechStack";
+import LineBar from "@/components/common/LineBar/LineBar";
+import MoreAboutContent, { MoreAboutHeading } from "./Sections/MoreAbout";
 
 const Home = () => {
   return (
-    <div className="min-h-[200vh]">
+    <div className=" pb-40">
       <BottomLine>
         <Section>
           <HeroImage />
@@ -22,6 +24,7 @@ const Home = () => {
       </BottomLine>
 
       <BottomLine>
+        <LineBar />
         <Section>
           <About />
         </Section>
@@ -30,14 +33,26 @@ const Home = () => {
       <SocialLinks />
 
       <BottomLine>
+        <LineBar />
         <Section>
-          <MoreAbout />
+          <MoreAboutHeading />
+        </Section>
+      </BottomLine>
+      <BottomLine>
+        <Section>
+          <MoreAboutContent />
         </Section>
       </BottomLine>
 
       <BottomLine>
+        <LineBar />
         <Section>
-          <AboutContent />
+          <TeactStacKHeading />
+        </Section>
+      </BottomLine>
+      <BottomLine>
+        <Section>
+          <TechStack />
         </Section>
       </BottomLine>
     </div>

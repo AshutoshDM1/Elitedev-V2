@@ -43,7 +43,9 @@ const SocialLinksSection = ({
       <Section className="relative border-none">
         <div className="grid grid-cols-2 gap-4 z-10 relative  border-edge">
           {socials.map((social) => (
-            <div className="flex items-center gap-2 p-4 ">
+            <div 
+            key={social.name}
+            className="flex items-center gap-2 p-4 ">
               <Link target="_blank" href={social.href}>{social.icon}</Link>
               <div className="w-full flex items-center justify-between gap-2">
                 <div className="flex flex-col gap-1">
