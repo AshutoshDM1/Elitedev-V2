@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-dark : "#09090B";
+  --color-dark: #09090B;
 }
 
 @theme inline {
@@ -80,7 +80,6 @@
   --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
   --sidebar-border: oklch(0.923 0.003 48.717);
   --sidebar-ring: oklch(0.709 0.01 56.259);
-  --color-dark: "hsl(204, 2.8%, 9.6%)";
   --pattern-foreground: color-mix(
     in oklab,
     color-mix(
