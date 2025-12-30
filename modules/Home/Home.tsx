@@ -55,6 +55,11 @@ const Home = () => {
           <TechStack />
         </Section>
       </BottomLine>
+      <BottomLine>
+        <Section>
+          
+        </Section>
+      </BottomLine>
     </div>
   );
 };
