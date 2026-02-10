@@ -7,6 +7,7 @@ import SocialLinks from "./Sections/SocialLinks";
 import TechStack, { TeactStacKHeading } from "./Sections/TechStack";
 import LineBar from "@/components/common/LineBar/LineBar";
 import MoreAboutContent, { MoreAboutHeading } from "./Sections/MoreAbout";
+import Experience from "./Sections/Experience";
 
 const Home = () => {
   return (
@@ -56,8 +57,9 @@ const Home = () => {
         </Section>
       </BottomLine>
       <BottomLine>
+      <LineBar />
         <Section>
-          
+          <Experience />
         </Section>
       </BottomLine>
     </div>
