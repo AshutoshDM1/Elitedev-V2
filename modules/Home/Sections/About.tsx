@@ -1,3 +1,6 @@
+import BottomLine from "@/components/common/Section/BottomLine";
+import Section from "@/components/common/Section/Section";
+
 import {
   Briefcase,
   Building2,
@@ -27,18 +30,20 @@ const About = () => {
   ];
 
   return (
-    <>
-      <div className="flex flex-col p-4 gap-2">
-        {personalInfo.map((item) => (
-          <div key={item.text} className="text-sm flex items-center gap-2">
-            <span className="flex size-6 shrink-0 items-center justify-center rounded-lg border border-foreground/20 bg-foreground/10 p-1 text-foreground/70 ring-1 ring-foreground/5 ring-offset-1 ring-offset-background">
-              {item.icon}
-            </span>
-            {item.text}
-          </div>
-        ))}
-      </div>
-    </>
+    <BottomLine>
+      <Section>
+        <div className="flex flex-col p-4 gap-2">
+          {personalInfo.map((item) => (
+            <div key={item.text} className="text-sm flex items-center gap-2">
+              <span className="flex size-6 shrink-0 items-center justify-center rounded-lg border border-foreground/20 bg-foreground/10 p-1 text-foreground/70 ring-1 ring-foreground/5 ring-offset-1 ring-offset-background">
+                {item.icon}
+              </span>
+              {item.text}
+            </div>
+          ))}
+        </div>
+      </Section>
+    </BottomLine>
   );
 };
 

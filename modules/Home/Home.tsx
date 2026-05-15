@@ -7,54 +7,24 @@ import SocialLinks from "./Sections/SocialLinks";
 import TechStack, { TeactStacKHeading } from "./Sections/TechStack";
 import LineBar from "@/components/common/LineBar/LineBar";
 import MoreAboutContent, { MoreAboutHeading } from "./Sections/MoreAbout";
+import Experience from "./Sections/Experience";
 
 const Home = () => {
   return (
     <div className=" pb-40">
-      <BottomLine>
-        <Section>
-          <HeroImage />
-        </Section>
-      </BottomLine>
-
-      <BottomLine>
-        <Section>
-          <ProfileImage />
-        </Section>
-      </BottomLine>
-
-      <BottomLine>
-        <LineBar />
-        <Section>
-          <About />
-        </Section>
-      </BottomLine>
-
+      <HeroImage />
+      <ProfileImage />
+      <LineBar />
+      <About />
       <SocialLinks />
-
-      <BottomLine>
-        <LineBar />
-        <Section>
-          <MoreAboutHeading />
-        </Section>
-      </BottomLine>
-      <BottomLine>
-        <Section>
-          <MoreAboutContent />
-        </Section>
-      </BottomLine>
-
-      <BottomLine>
-        <LineBar />
-        <Section>
-          <TeactStacKHeading />
-        </Section>
-      </BottomLine>
-      <BottomLine>
-        <Section>
-          <TechStack />
-        </Section>
-      </BottomLine>
+      <LineBar />
+      <MoreAboutHeading />
+      <MoreAboutContent />
+      <LineBar />
+      <TeactStacKHeading />
+      <TechStack />
+      <LineBar />
+      <Experience />
     </div>
   );
 };

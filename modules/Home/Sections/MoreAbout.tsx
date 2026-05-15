@@ -1,5 +1,7 @@
 import { Dot } from "lucide-react";
 import React from "react";
+import BottomLine from "@/components/common/Section/BottomLine";
+import Section from "@/components/common/Section/Section";
 
 interface TextContentProps {
   text?: string;
@@ -16,9 +18,13 @@ interface AboutContentProps {
 
 export const MoreAboutHeading = () => {
   return (
-    <div className="px-4 ">
-      <h2 className="text-2xl font-semibold ">About</h2>
-    </div>
+    <BottomLine>
+      <Section>
+        <div className="px-4 ">
+          <h2 className="text-2xl font-semibold ">About</h2>
+        </div>
+      </Section>
+    </BottomLine>
   );
 };
 
@@ -62,9 +68,12 @@ const MoreAboutContent = () => {
             {
               text: "I also enjoy iterating on deployments and monitoring pipelines.",
             },
-            { text: "Creating AI Agents and AI Workflows with Gemini and Claude" },
-            { text: "Exploring new technologies and frameworks and learning new things" },
-            
+            {
+              text: "Creating AI Agents and AI Workflows with Gemini and Claude",
+            },
+            {
+              text: "Exploring new technologies and frameworks and learning new things",
+            },
           ],
         },
       ],
@@ -72,27 +81,34 @@ const MoreAboutContent = () => {
   ];
 
   return (
-    <div className="p-4 ">
-      <div className="space-y-4 flex flex-col ">
-        {aboutContent.map((item) => (
-          <div key={item.id} className="flex gap-1.5 flex-wrap items-center">
-            <Dot className="size-1 rounded-full border border-foreground bg-foreground" />
-            {item.textContent.map((textContent, idx) => (
-              <TextContent
-                key={`${item.id}-${idx}-${
-                  textContent.text ?? textContent.highlight ?? "nested"
-                }`}
-                text={textContent.text}
-                highlight={textContent.highlight}
-                underline={textContent.underline}
-                icon={textContent.icon}
-                textContent={textContent.textContent}
-              />
+    <BottomLine>
+      <Section>
+        <div className="p-4 ">
+          <div className="space-y-4 flex flex-col ">
+            {aboutContent.map((item) => (
+              <div
+                key={item.id}
+                className="flex gap-1.5 flex-wrap items-center"
+              >
+                <Dot className="size-1 rounded-full border border-foreground bg-foreground" />
+                {item.textContent.map((textContent, idx) => (
+                  <TextContent
+                    key={`${item.id}-${idx}-${
+                      textContent.text ?? textContent.highlight ?? "nested"
+                    }`}
+                    text={textContent.text}
+                    highlight={textContent.highlight}
+                    underline={textContent.underline}
+                    icon={textContent.icon}
+                    textContent={textContent.textContent}
+                  />
+                ))}
+              </div>
             ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      </Section>
+    </BottomLine>
   );
 };
 
@@ -119,8 +135,8 @@ const TextContent = ({
                 key={`${text ?? highlight ?? "nested"}-${idx}`}
                 className="flex gap-1.5 flex-wrap items-center"
               >
-            <Dot className="size-1 rounded-full border border-foreground bg-foreground" />
-            <TextContent
+                <Dot className="size-1 rounded-full border border-foreground bg-foreground" />
+                <TextContent
                   text={textContent.text}
                   highlight={textContent.highlight}
                   underline={textContent.underline}
