@@ -13,12 +13,13 @@ const suse = SUSE({
   variable: "--font-suse",
 });
 
-const siteUrl =  process.env.NEXT_PUBLIC_SITE_URL || "https://elitedev-v2.vercel.app";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://elitedev-v2.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Ashutosh Tiwari - FullStack Developer Portfolio",
+    default: "Ashutosh Tiwari - FullStack Developer",
     template: "%s | Ashutosh Tiwari - FullStack Developer",
   },
   description:
@@ -133,7 +134,7 @@ export const metadata: Metadata = {
     siteName: "Ashutosh Tiwari Portfolio",
     images: [
       {
-        url: "/portfolio-preview.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Ashutosh Tiwari - FullStack Developer Portfolio showcasing React, Next.js, and TypeScript projects",
@@ -157,7 +158,7 @@ export const metadata: Metadata = {
     creator: "@ashutosh-tiwari",
     images: [
       {
-        url: "/portfolio-preview.png",
+        url: "/og-image.png",
         alt: "Ashutosh Tiwari - FullStack Developer Portfolio",
       },
     ],
@@ -310,7 +311,9 @@ export default function RootLayout({
           content="telephone=no, date=no, email=no, address=no"
         />
       </head>
-      <body className={`${suse.variable} font-suse scroll-smooth bg-white dark:bg-dark`}>
+      <body
+        className={`${suse.variable} font-suse scroll-smooth bg-white dark:bg-dark`}
+      >
         <Suspense fallback={null}>
           <ThemeProvider
             attribute="class"

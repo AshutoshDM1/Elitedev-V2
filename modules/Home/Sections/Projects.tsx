@@ -145,7 +145,7 @@ const PROJECT_DATA: ProjectItemType[] = [
     id: "5",
     name: "Insight AI",
     period: "07.2024 — 08.2024",
-    link: "https://insightai.elitedev.space/",
+    link: "https://insight-ai.elitedev.space/",
     github: "https://github.com/AshutoshDM1/InsightAI",
     image: "https://insight-ai.elitedev.space/InsightAI_favicon.png",
     description: `AI chatbot platform inspired by modern conversational AI systems with real-time interactions and modern UI design.
@@ -234,7 +234,8 @@ const PROJECT_DATA: ProjectItemType[] = [
     period: "08.2024 — 09.2025",
     link: "https://rps-web-sage.vercel.app",
     github: "https://github.com/AshutoshDM1/RPS",
-    image: "https://static.vecteezy.com/system/resources/previews/047/825/978/non_2x/3d-cube-icon-against-transparent-background-free-png.png",
+    image:
+      "https://static.vecteezy.com/system/resources/previews/047/825/978/non_2x/3d-cube-icon-against-transparent-background-free-png.png",
     description: `Real-time multiplayer Rock Paper Scissors game using socket-based communication and room matchmaking.
 
 - Multiplayer room system
@@ -290,32 +291,34 @@ const Projects = () => {
           </div>
         </Section>
       </BottomLine>
-      <BottomLine className="p-0">
-        <Section className="border-b-0">
-          <div className="flex flex-col">
-            {displayProjects.map((project, index) => (
-              <ProjectItem
-                key={project.id}
-                project={project}
-                isLast={index === displayProjects.length - 1}
-              />
-            ))}
-          </div>
-          {totalProjects > 3 && (
-            <div className="flex justify-center py-2 border-t border-edge">
-              <Button size="sm" onClick={() => setShowAll(!showAll)}>
-                {showAll ? "Show Less" : "Show More"}
-                <ChevronDown
-                  className={cn(
-                    "w-4 h-4 transition-transform duration-300",
-                    showAll && "rotate-180",
-                  )}
+      <div className="px-2 border-x border-edge">
+        <BottomLine className="p-0">
+          <Section className="border-b-0">
+            <div className="flex flex-col">
+              {displayProjects.map((project, index) => (
+                <ProjectItem
+                  key={project.id}
+                  project={project}
+                  isLast={index === displayProjects.length - 1}
                 />
-              </Button>
+              ))}
             </div>
-          )}
-        </Section>
-      </BottomLine>
+            {totalProjects > 3 && (
+              <div className="flex justify-center py-2 border-t border-edge">
+                <Button size="sm" onClick={() => setShowAll(!showAll)}>
+                  {showAll ? "Show Less" : "Show More"}
+                  <ChevronDown
+                    className={cn(
+                      "w-4 h-4 transition-transform duration-300",
+                      showAll && "rotate-180",
+                    )}
+                  />
+                </Button>
+              </div>
+            )}
+          </Section>
+        </BottomLine>
+      </div>
     </>
   );
 };
@@ -420,7 +423,7 @@ const ProjectItem = ({
 
       {/* Collapsible Description */}
       {hasDescription && isExpanded && (
-        <div className="px-4 pb-6 pl-24 border-t border-edge flex flex-col gap-6">
+        <div className="px-4 pb-6 md:pl-24 border-t border-edge flex flex-col gap-6">
           <div className="prose prose-sm dark:prose-invert max-w-none pt-6 text-foreground/90">
             <ReactMarkdown
               components={{

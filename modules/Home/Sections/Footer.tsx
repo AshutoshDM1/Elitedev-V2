@@ -8,7 +8,7 @@ const Footer = () => {
     <BottomLine>
       <Section className="py-6 flex flex-col items-center gap-8">
         <div className="flex flex-col items-center gap-2 text-center">
-          <p className="text-muted-foreground text-base tracking-tight">
+          <p className="text-muted-foreground text-base tracking-tight text-wrap">
             Inspired by{" "}
             <a
               href="https://tailwindcss.com"
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
       </Section>
       <Section className="flex items-center justify-center border-t border-edge">
-        <div className="flex divide-x divide-edge border-x border-edge ">
+        <div className="flex flex-col md:flex-row divide-y divide-edge md:divide-y-0 md:divide-x border-x md:border-x-0 border-edge ">
           <Link
             href="/llms.txt"
             className="text-muted-foreground text-base tracking-tight flex items-center justify-center p-2 px-4"
