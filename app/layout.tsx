@@ -134,7 +134,7 @@ export const metadata: Metadata = {
     siteName: "Ashutosh Tiwari",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Ashutosh Tiwari - FullStack Developer showcasing React, Next.js, and TypeScript projects",
@@ -151,7 +151,7 @@ export const metadata: Metadata = {
     creator: "@ashutosh-tiwari",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.webp",
         alt: "Ashutosh Tiwari - FullStack Developer",
       },
     ],
