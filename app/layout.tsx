@@ -135,10 +135,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.webp",
-        width: 1200,
-        height: 630,
+        width: 1536,
+        height: 1024,
         alt: "Ashutosh Tiwari - FullStack Developer showcasing React, Next.js, and TypeScript projects",
-        type: "image/png",
+        type: "image/webp",
       },
     ],
   },
