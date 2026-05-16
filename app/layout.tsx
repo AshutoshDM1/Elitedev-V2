@@ -128,30 +128,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Ashutosh Tiwari - FullStack Developer Portfolio",
+    title: "Ashutosh Tiwari - FullStack Developer",
     description:
       "Experienced FullStack Developer specializing in React.js, Next.js, TypeScript, and modern web technologies. Showcasing innovative projects including AI-powered applications, manga platforms, and full-stack solutions with expertise in AWS, Docker, and cloud deployment.",
-    siteName: "Ashutosh Tiwari Portfolio",
+    siteName: "Ashutosh Tiwari",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Ashutosh Tiwari - FullStack Developer Portfolio showcasing React, Next.js, and TypeScript projects",
-        type: "image/png",
-      },
-      {
-        url: "/favicon.webp",
-        width: 512,
-        height: 512,
-        alt: "Ashutosh Tiwari Portfolio Logo",
+        alt: "Ashutosh Tiwari - FullStack Developer showcasing React, Next.js, and TypeScript projects",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ashutosh Tiwari - FullStack Developer Portfolio",
+    title: "Ashutosh Tiwari - FullStack Developer",
     description:
       "FullStack Developer specializing in React.js, Next.js, TypeScript. Building innovative web applications with modern technologies and cloud platforms.",
     site: "@ashutosh-tiwari",
@@ -159,7 +152,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        alt: "Ashutosh Tiwari - FullStack Developer Portfolio",
+        alt: "Ashutosh Tiwari - FullStack Developer",
       },
     ],
   },
