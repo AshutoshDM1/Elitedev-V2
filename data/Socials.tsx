@@ -13,7 +13,7 @@ export const socials_row_1: ISocial[] = [
     name: "Discord",
     short_link: "download.sensei",
     icon: (
-      <div className="min-w-12 h-12 bg-background rounded-xl border border-edge">
+      <div className="size-10 bg-background rounded-xl border border-edge">
         <Image
           src={SocialsIcons.discordIcon}
           alt="Discord"
@@ -29,7 +29,7 @@ export const socials_row_1: ISocial[] = [
     name: "GitHub",
     short_link: "AshutoshDM1",
     icon: (
-      <div className="min-w-12 h-12 bg-background rounded-xl border border-edge overflow-hidden">
+      <div className="size-10 bg-background rounded-xl border border-edge overflow-hidden">
         <Image
           src={SocialsIcons.githubIcon}
           alt="GitHub"
@@ -46,7 +46,7 @@ export const socials_row_2 = [
     name: "Twitter",
     short_link: "AshutoshDM_1",
     icon: (
-      <div className="min-w-12 h-12 bg-background rounded-xl border border-edge overflow-hidden">
+      <div className="size-10 bg-background rounded-xl border border-edge overflow-hidden">
         <Image
           src={SocialsIcons.twitterIcon}
           alt="Twitter"
@@ -61,7 +61,7 @@ export const socials_row_2 = [
     name: "LinkedIn",
     short_link: "Ashutosh_Tiwari",
     icon: (
-      <div className="min-w-12 h-12 bg-background rounded-xl border border-edge overflow-hidden">
+      <div className="size-10 bg-background rounded-xl border border-edge overflow-hidden">
         <Image
           src={SocialsIcons.linkedInIcon}
           alt="LinkedIn"
@@ -78,7 +78,7 @@ export const socials_row_3 = [
     name: "Notion",
     short_link: "AshutoshTiwari",
     icon: (
-      <div className="min-w-12 h-12 dark:bg-foreground rounded-xl border border-edge overflow-hidden">
+      <div className="size-10 dark:bg-foreground rounded-xl border border-edge overflow-hidden">
         <Image
           src={SocialsIcons.notionIcon}
           alt="Notion"
@@ -93,7 +93,7 @@ export const socials_row_3 = [
     name: "Fork You",
     short_link: "Ashutosh Tiwari",
     icon: (
-      <div className="min-w-12 h-12 bg-foreground rounded-xl border border-edge overflow-hidden">
+      <div className="size-10 bg-foreground rounded-xl border border-edge overflow-hidden">
         <Image
           src={SocialsIcons.forkYouIcon}
           alt="Fork You"
@@ -102,6 +102,6 @@ export const socials_row_3 = [
         />
       </div>
     ),
-    href: "https://forkyou.dev/user/ashutoshdm_1",
+    href: "https://forkyou.dev/profile/ashutoshdm1",
   },
 ];

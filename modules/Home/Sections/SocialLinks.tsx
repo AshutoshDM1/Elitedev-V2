@@ -56,7 +56,7 @@ const SocialLinksSection = ({
                 {social.icon}
               </Link>
               <div className="w-full flex items-center justify-between gap-2">
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-0">
                   <h3 className="text-sm font-medium">{social.name}</h3>
                   <p className="text-sm text-muted-foreground/60 hover:underline cursor-pointer">
                     {social.short_link}

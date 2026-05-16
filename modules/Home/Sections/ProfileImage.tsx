@@ -1,5 +1,6 @@
 import BottomLine from "@/components/common/Section/BottomLine";
 import Section from "@/components/common/Section/Section";
+import { TextFlip } from "@/components/text-flip";
 import Svg from "@/constants/svg";
 import Image from "next/image";
 
@@ -25,9 +26,11 @@ const ProfileImage = () => {
               Ashutosh Tiwari
               <span>{Svg.twitterSVG}</span>
             </h2>
-            <p className="flex justify-start text-sm font-light text-foreground/60 border-t border-edge p-2 z-10">
-              One Source Contributor
-            </p>
+            <TextFlip className="flex justify-start text-sm font-light text-foreground/60 border-t border-edge p-2 z-10">
+              <span>Developer</span>
+              <span>Designer</span>
+              <span>Open Source Contributor</span>
+            </TextFlip>
           </div>
         </div>
       </Section>

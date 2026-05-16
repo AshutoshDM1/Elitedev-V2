@@ -8,6 +8,8 @@ import TechStack, { TeactStacKHeading } from "./Sections/TechStack";
 import LineBar from "@/components/common/LineBar/LineBar";
 import MoreAboutContent, { MoreAboutHeading } from "./Sections/MoreAbout";
 import Experience from "./Sections/Experience";
+import GitHubGraph from "./Sections/Github";
+import Projects from "./Sections/Projects";
 
 const Home = () => {
   return (
@@ -25,6 +27,10 @@ const Home = () => {
       <TechStack />
       <LineBar />
       <Experience />
+      <LineBar />  
+      <GitHubGraph />
+      <LineBar />
+      <Projects />
     </div>
   );
 };

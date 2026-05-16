@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 
 const Section = ({ className, children }: ISectionProps) => {
   return (
-    <div className={cn("w-full md:max-w-[700px] mx-auto border-x border-edge ", className)}>{children}</div>
+    <div className={cn("w-full md:max-w-3xl mx-auto border-x border-edge ", className)}>{children}</div>
   );
 };
 

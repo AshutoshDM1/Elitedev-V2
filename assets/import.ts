@@ -15,3 +15,11 @@ const SocialsIcons = {
 };
 
 export default SocialsIcons;
+
+import logoImage from "./logo/logo.png";
+
+const LogoImages = {
+  logoImage,
+};
+
+export { LogoImages };

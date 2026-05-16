@@ -21,7 +21,7 @@ const Navbar = () => {
           scrolled ? "shadow-[0_0_16px_0_black]/8" : ""
         }`}
       >
-        <div className="flex items-center justify-end gap-4 border-x border-edge max-w-[700px] mx-auto py-3 px-2">
+        <div className="flex items-center justify-end gap-4 border-x border-edge max-w-3xl mx-auto py-3 px-2">
           {["Elitefolio", "Blogs", "Components"].map((item) => (
             <h1
               key={item}
