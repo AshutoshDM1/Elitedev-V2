@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "insight-ai.elitedev.space",
+        hostname: "insightai.elitedev.space",
       },
       {
         protocol: "https",
@@ -30,6 +30,18 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "kiro.elitedev.space",
+      },
+      {
+        protocol: "https",
+        hostname: "web3-wallet-v1-0-0.vercel.app",
+      },
+      {
+        protocol: "https",
+        hostname: "rps-web-sage.vercel.app",
+      },
+      {
+        protocol: "https",
+        hostname: "elite-cli.vercel.app",
       },
     ],
   },

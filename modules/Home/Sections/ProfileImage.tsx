@@ -26,11 +26,13 @@ const ProfileImage = () => {
               Ashutosh Tiwari
               <span>{Svg.twitterSVG}</span>
             </h2>
-            <TextFlip className="flex justify-start text-sm font-light text-foreground/60 border-t border-edge p-2 z-10">
-              <span>Developer</span>
-              <span>Designer</span>
-              <span>Open Source Contributor</span>
-            </TextFlip>
+            <span className="flex justify-start text-sm font-light text-foreground/60 border-t border-edge p-2 z-10">
+              <TextFlip>
+                <span>Full Stack Developer</span>
+                <span>Open Source Contributor</span>
+                <span>I Build Modern & Scalable Web Applications</span>
+              </TextFlip>
+            </span>
           </div>
         </div>
       </Section>

@@ -12,7 +12,7 @@ export const TeactStacKHeading = () => {
   return (
     <BottomLine>
       <Section>
-        <div className="px-4">
+        <div className="p-2 px-4">
           <h2 className="text-2xl font-semibold ">Stack</h2>
         </div>
       </Section>
@@ -32,7 +32,7 @@ const TechStack = () => {
   };
 
   const isNotInvert = (image: StackEntry) => {
-    return image === stackImagesTyped.shadcn || image === stackImagesTyped.next;
+    return image === stackImagesTyped.shadcn || image === stackImagesTyped.next || image === stackImagesTyped.aws;
   };
 
   return (

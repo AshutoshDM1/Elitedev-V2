@@ -10,6 +10,7 @@ import MoreAboutContent, { MoreAboutHeading } from "./Sections/MoreAbout";
 import Experience from "./Sections/Experience";
 import GitHubGraph from "./Sections/Github";
 import Projects from "./Sections/Projects";
+import Footer from "./Sections/Footer";
 
 const Home = () => {
   return (
@@ -27,10 +28,12 @@ const Home = () => {
       <TechStack />
       <LineBar />
       <Experience />
-      <LineBar />  
+      <LineBar />
       <GitHubGraph />
       <LineBar />
       <Projects />
+      <LineBar />
+      <Footer />
     </div>
   );
 };

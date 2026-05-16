@@ -17,7 +17,7 @@ export const MoreAboutHeading = () => {
   return (
     <BottomLine>
       <Section>
-        <div className="px-4 ">
+        <div className="p-2 px-4">
           <h2 className="text-2xl font-semibold ">About</h2>
         </div>
       </Section>

@@ -105,7 +105,7 @@ const Experience = () => {
     <>
       <BottomLine>
         <Section>
-          <div className="px-4">
+          <div className="p-2 px-4">
             <h2 className="text-2xl font-semibold ">Work Experience</h2>
           </div>
         </Section>
